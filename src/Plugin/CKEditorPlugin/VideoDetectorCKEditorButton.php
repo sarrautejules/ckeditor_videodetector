@@ -32,13 +32,10 @@ class VideoDetectorCKEditorButton extends CKEditorPluginBase {
    * editor.ui.addRichCombo() functions in the plugin.js file.
    */
   public function getButtons() {
-    // Make sure that the path to the image matches the file structure of
-    // the CKEditor plugin you are implementing.
-    $path = '/libraries/videodetector';
     return array(
       'VideoDetector' => array(
         'label' => t('Video detector ckeditor button'),
-        'image' => $path . '/icons/videodetector.svg',
+        'image' => 'libraries/videodetector/icons/videodetector.svg',
       ),
     );
   }
@@ -47,10 +44,7 @@ class VideoDetectorCKEditorButton extends CKEditorPluginBase {
    * {@inheritdoc}
    */
   public function getFile() {
-    // Make sure that the path to the plugin.js matches the file structure of
-    // the CKEditor plugin you are implementing.
-    $path = '/libraries/videodetector';
-    return $path . '/plugin.js';
+    return 'libraries/videodetector/plugin.js';
 
   }
 
