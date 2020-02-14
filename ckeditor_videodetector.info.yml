@@ -4,4 +4,4 @@ description: This plugin allows you to insert videos from Youtube, Vimeo or Dail
 core: 8.x
 package: CKEditor
 dependencies:
-  - ckeditor
+  - drupal:ckeditor
